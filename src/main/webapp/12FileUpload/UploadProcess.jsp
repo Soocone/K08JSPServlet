@@ -70,6 +70,7 @@ try{
 	//DAO객체 생성 및 insert 처리
 	MyfileDAO dao = new MyfileDAO();
 	dao.insertFile(dto);
+	//여기서는 자원 반납. pool을 쓰고 있으므로
 	dao.close();
 	
 	//문제가 없다면 파일리스트로 이동한다.
