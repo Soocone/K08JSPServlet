@@ -117,7 +117,7 @@ public class MVCBoardDAO extends DBConnPool
 				psmt.setString(3, dto.getContent());
 				psmt.setString(4, dto.getOfile());
 				psmt.setString(5, dto.getSfile());
-				psmt.setString(6, dto.getPass());
+				psmt.setString(6, dto.getPass()); 
 				
 				//쿼리문 실행: 입력에 성공한다면 1이 반환된다. 실패시 0 반환.
 				result = psmt.executeUpdate();
